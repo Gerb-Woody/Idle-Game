@@ -1,0 +1,79 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct6h7or5tyjtu"]
+
+[ext_resource type="Texture2D" uid="uid://bj5w17y3k6wjd" path="res://Assets/Textures/Background.png" id="1_0omjo"]
+[ext_resource type="PackedScene" uid="uid://b0rb53mh3m7in" path="res://Assets/Scenes/farm_tile.tscn" id="2_w1ain"]
+
+[node name="FarmScene" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 675.0
+offset_bottom = 1200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 675.0
+offset_bottom = 1200.0
+texture = ExtResource("1_0omjo")
+metadata/_edit_use_anchors_ = true
+
+[node name="FarmTile" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 46.0
+offset_top = 42.0
+offset_right = -396.0
+offset_bottom = -961.0
+
+[node name="FarmTile2" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 385.0
+offset_top = 39.0
+offset_right = -57.0
+offset_bottom = -964.0
+
+[node name="FarmTile3" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 46.0
+offset_top = 256.0
+offset_right = -396.0
+offset_bottom = -747.0
+
+[node name="FarmTile4" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 385.0
+offset_top = 256.0
+offset_right = -57.0
+offset_bottom = -747.0
+
+[node name="FarmTile5" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 52.0
+offset_top = 478.0
+offset_right = -390.0
+offset_bottom = -525.0
+
+[node name="FarmTile6" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 391.0
+offset_top = 478.0
+offset_right = -51.0
+offset_bottom = -525.0
+
+[node name="FarmTile7" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 52.0
+offset_top = 694.0
+offset_right = -390.0
+offset_bottom = -309.0
+
+[node name="FarmTile8" parent="Control" instance=ExtResource("2_w1ain")]
+layout_mode = 1
+offset_left = 391.0
+offset_top = 694.0
+offset_right = -51.0
+offset_bottom = -309.0
