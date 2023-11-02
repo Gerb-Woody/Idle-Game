@@ -1,4 +1,15 @@
-[gd_scene format=3 uid="uid://b0rb53mh3m7in"]
+[gd_scene load_steps=6 format=3 uid="uid://b0rb53mh3m7in"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/farm_tile.gd" id="1_ihs6d"]
+[ext_resource type="Script" path="res://Assets/Scripts/PlantTypeGroup.gd" id="2_h4fdl"]
+[ext_resource type="PackedScene" uid="uid://cciu3eu01b3vj" path="res://Assets/Scenes/gourd_scene.tscn" id="2_kov1q"]
+[ext_resource type="Texture2D" uid="uid://b6tjajr30yx7m" path="res://Assets/Textures/Gourd.png" id="3_6ov84"]
+
+[sub_resource type="Resource" id="Resource_373m6"]
+script = ExtResource("2_h4fdl")
+cropName = "Gourd"
+gameObject = ExtResource("2_kov1q")
+plantIcon = ExtResource("3_6ov84")
 
 [node name="FarmTile" type="Control"]
 layout_mode = 3
@@ -9,6 +20,8 @@ offset_right = -350.0
 offset_bottom = -925.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ihs6d")
+Gourd01 = SubResource("Resource_373m6")
 
 [node name="Container" type="Container" parent="."]
 layout_mode = 1
@@ -19,5 +32,5 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DetectionField" type="ColorRect" parent="Container"]
-self_modulate = Color(1, 1, 1, 0.423529)
+self_modulate = Color(1, 1, 1, 0.694118)
 layout_mode = 2
